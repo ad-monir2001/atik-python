@@ -1,2 +1,2 @@
-# I practice here pytho.
+# I practice here python.
 And its my own place  to learn
