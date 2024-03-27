@@ -96,62 +96,12 @@
 # #     if count == 5:
 # #         print()
 # #         count=0
-# # T=int(input())
-# # for u in range(T):
-# #     def is_prime(n):
-# #         if n <= 1:
-# #             return False
-# #         if n <= 3:
-# #             return True
-# #         if n % 2 == 0 or n % 3 == 0:
-# #             return False
-# #         i = 5
-# #         while i * i <= n:
-# #             if n % i == 0 or n % (i + 2) == 0:
-# #                 return False
-# #             i += 6
-# #         return True
-
-# #     def count_primes_up_to(limit):
-# #         count = 0
-# #         for num in range(2, limit + 1):
-# #             if is_prime(num):
-# #                 count += 1
-# #         return count
-
-# #     limit = int(input("Enter the limit: "))
-# #     prime_count = count_primes_up_to(limit)
-# #     print(f"The number of prime numbers up to {limit} is: {prime_count}")
 # '''def N():#!If I want to call function.I will write def any name():.
 #     print("Hello, Atikur Rahman")
 # N()
 # def sum(a,s):#parameters #*def sum(a=5,s=6):
 #     print("The summation of a and s=",a+s)#!print(f"sum of {a} and{s}={a+s}")
 #     print("Atikur Rahman and"," milon are friends")
-# a=int(input())
-# s=int(input())
-# sum(a,s)#name(5,6)={a,s=input()}
-# def any(name,age):
-#     print(f"Hello {name}.I am {age} years old")
-# name=input()
-# age=input()
-# any("Atik",17)
-# any(name,age)
-# def atikur(s):
-#     print(s,"Atikur RAhman")
-#     d=print(s,list(map(str,input().split())))
-# s=input()
-# atikur(s)
-# def sum(a,b):
-#     print(a+b)
-# a=int(input())
-# b=int(input())
-# sum(a,b)
-# def sum_with_return(a,b):
-#     return a+b
-# r=sum_with_return(9,b)
-# r=r+4
-# print(r)'''
 # #library function
 # #*import random or(datetime,math)
 # #!anything=random.randint or(datetime.datetime.today(),math.sqrt,(number),pi)
