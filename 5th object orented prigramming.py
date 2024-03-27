@@ -10,19 +10,19 @@
 # #*      statement(s)
 #     print()
 # #* obj name=className(parameters)####obj
-# class object_oriented():
-#     def __init__(self,first_Name , money):
-#         self.Name=first_Name
-#         self.mo=money+int(input("last_added_money : "))
+class object_oriented():
+    def __init__(self,first_Name , money):
+        self.Name=first_Name
+        self.mo=money+int(input("last_added_money : "))
 
-#     def full_function(self,last_Name,last_added_money):
-#         self.mo=self.mo+last_added_money
-#         self.Name=self.Name+last_Name
-#         print(f"{last_added_money} is my total amount")
-# # introduction=introduction.full_function()
-# introduction=object_oriented(first_Name=input("Name : "),money=eval(input('amount : ')))
-# print((introduction.mo))
-#!ONE
+    def full_function(self,last_Name,last_added_money):
+        self.mo=self.mo+last_added_money
+        self.Name=self.Name+last_Name
+        print(f"{last_added_money} is my total amount")
+introduction=object_oriented.full_function("A",5)
+introduction=object_oriented(first_Name=input("Name : "),money=eval(input('amount : ')))
+print((introduction.mo))
+# #!ONE
 # class Car:
 #     def __init__(self,Name:str,Creator:str,Color:str,Making_Year):
 #         self.name=Name
@@ -80,23 +80,23 @@
 # (student1.re())
 #!POLYMORPHISM
 #!
-class Man:
-    def __init__(self,Name,age):
-        self.Name=Name;self.Age=age
-    def intro(self):
-        print("My Name is Atikur")
-class Atikur(Man):
-    def intro(self):
-        print(A.Name ,"is a student")
-class Shakib(Man):
-    def intro(self):
-      print(S.Name,"is", S.Age ,"years old")
-class Milon(Man):
-    def intro(self):
-        print(f"{self.Name} is my friend")
-A=Atikur("Atikur",17);S=Shakib("Shakib",18)
-M=Milon("Milon",17)
-for N in [A,S,M]:
-    (N.intro())
+# class Man:
+#     def __init__(self,Name,age):
+#         self.Name=Name;self.Age=age
+#     def intro(self):
+#         print("My Name is Atikur")
+# class Atikur(Man):
+#     def intro(self):
+#         print(A.Name ,"is a student")
+# class Shakib(Man):
+#     def intro(self):
+#       print(S.Name,"is", S.Age ,"years old")
+# class Milon(Man):
+#     def intro(self):
+#         print(f"{self.Name} is my friend")
+# A=Atikur("Atikur",17);S=Shakib("Shakib",18)
+# M=Milon("Milon",17)
+# for N in [A,S,M]:
+#     (N.intro())
 
     

@@ -1,12 +1,10 @@
-#REGULAR EXPRESION
-import re 
-#var="anything"
-#*rules=(re.search("any",var))
-# rules.group()
-# re.findall(r"condition",var)
-# re.split(r"\w+","multiple word here")
+from ast import List
 
-a="cv6v82v5"
-p=(re.split(r"[6-8]+",a ,flags=re.IGNORECASE))
-print("".join(p))
-#*LINEAR SEARCH
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int):
+        self.n=list(map(int,nums.split()))
+        self.t= target
+
+    def result(self):
+        print(self.n[1]+self.n[0])
