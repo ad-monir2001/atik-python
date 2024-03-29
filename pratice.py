@@ -21,17 +21,6 @@
 # t.circle(26.6190379)
 # t.end_fill()
 # t.exitonclick()
-# a=int(input("please "))
-# print(a)
-# class Solution:
-#     def lengthOfLongestSubstring(self, s: str) :
-#         self.s=s
-#         self.a=[]
-#     def count(self):
-
-#         print(len(set(self.s)))
-
-
 # my=Solution()
 # my.s=input()
 # a=[]
@@ -91,15 +80,6 @@
 # my=Solution()
 # my.x=int(input())
 # my.re()
-
-class Solution:
-    def divide(self, dividend: int, divisor: int) -> int:
-        res=0
-        if divisor > 0 : 
-            res= 0
-        if dividend == int:
-            res=int(dividend//divisor)
-        return res
 # class Solution:
 #     def reverse(self, x: int) -> int:
 #         res = 0
@@ -119,13 +99,14 @@ class Solution:
 
 # print(my.myPow(float(input()),int(input())))
 
-# class Solution:
-    
-#     def myPow(self, x: float, n: int) -> float:
-#         if n == 0:
-#             return 1
-#         elif n == 1:
-#             return x
-#         elif n == -1:
-#             return 1/x
-#         return self.myPow(x, n//2) * self.myPow(x, n//2) * self.myPow(x, n%2)
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        if n == 0:
+            return 1
+        elif n == 1:
+            return x
+        elif n == -1:
+            return 1/x
+        return self.myPow(x, n//2) * self.myPow(x, n//2) * self.myPow(x, n%2)
+my=Solution()
+print(my.myPow(int(input()),int(input())))
