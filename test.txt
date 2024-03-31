@@ -1,1 +1,2 @@
 It is a file from the python text.
+This is new line from feature branch.
