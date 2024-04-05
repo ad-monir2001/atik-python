@@ -1,20 +1,23 @@
- #!FOR LOOP 
-# !FOR LOOP IS USED TO ITERATE OVER A SEQUANCE (string,list,set,dictionary,tuple) or other iterable object
-#**RULES OF FOR LOOP *for (variable_name) in sequence :
-#*    print(variable_name)
-s={1:"a",2:"s","n":"Atikur"}
-# s=set(s)
-# s=list(s)
-# s=tuple(s)
-# for i in s.values():
-#     print(i)
-#!WHILE LOOP
-#!WHILE LOOP IS USED TO ITERATE OVER A BLOCK OF CODE AS LONG AN THE CONDITION IS TRUE.
-#*RULES OF WHILE LOOO *while condition :
-#*    statement(s)
-# v=-2
-# while v<3:
-#     v=v+1
-#     print(v)
-#!FUNCTION 
-#*FUNCTION IS A BLOCK OF CODE WHICH ONLY RUNS WHEN IT IS CLLEF.
+# class Solution:
+#     def complexNumberMultiply(self, num1: str, num2: str) -> str:
+#         self.a=num1
+#         self.s=num2
+#         res = eval(num1)*eval(num2)
+#         return res
+# m=Solution()
+# print(m.complexNumberMultiply((input()),input()))
+# class Solution:
+#     def sumOfMultiples(self, n: int):
+#         c=0
+#         for i in range(1,n,3):
+#             c=c+1
+#             res = int (c + i)
+#             return int(res)
+# my=Solution()
+# print(my.sumOfMultiples(int(input())))
+p=0
+r=int(input())
+for i in range(3,r+1,3): 
+    n= p+ i
+    p=n
+    print(i) 
