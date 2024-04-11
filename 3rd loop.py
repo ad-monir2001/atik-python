@@ -1,10 +1,17 @@
+# a="123"
+# s="456"
+# print(eval(a)*eval(s))
+
 # class Solution:
-#     def complexNumberMultiply(self, num1: str, num2: str) -> str:
-#         self.a=num1
-#         self.s=num2
-#         res = eval(num1)*eval(num2)
-#         return res
-# m=Solution()
-# print(m.complexNumberMultiply((input()),input()))
+#     def ONePlus(self,digits:list)->list:
 
-
+class Solution:
+    def isPowerOfTwo(self, n: int) -> bool:
+        for i in range(n):
+            if 2**i==n:
+                return True
+            else:
+                return False
+my=Solution()
+print(my.isPowerOfTwo(int(input())))
+print(int(input())&int(input()))
