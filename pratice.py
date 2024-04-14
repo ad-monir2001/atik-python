@@ -24,12 +24,28 @@
 #     w=f
 #     print(m.checkPerfectNumber(f))
 
-def choose_a():
-    player=input("enter your choose : ")
-    com=input("enter com choose : ")
-    choose= {"play":player,"c":com}
-    return choose
+    # Google. ...
+    # University of Michigan. ...
+    # Coursera Project Network. ...
+    # University of Michigan. Python 3 Programming. ...
+    # Google. Google IT Automation with Python. ...
+    # Meta. Programming in Python. ...
+    # University of Pennsylvania. Introduction to Programming with Python and Java. ...
+    # Rice University. Python Programming Essentials.
+from tkinter import NO
 
-choose=choose_a()
-dict={"Name":"Atikur","roll":choose}
-print(choose)
+
+name=input("name : ")
+handle=open(name,'r')
+counts=dict()
+for i in handle:
+    word=i.split()
+    for w in word:
+        cuunts[word]=counts.get(w,0)+1
+bigcount=None
+bigword=None
+for w,count in counts.items():
+    if bigcount is None or count > bigcount:
+        bigcount=w
+        bigcount=count
+print(bigword,bigcount)
