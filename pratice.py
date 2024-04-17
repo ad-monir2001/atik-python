@@ -31,20 +31,19 @@
     # Meta. Programming in Python. ...
     # University of Pennsylvania. Introduction to Programming with Python and Java. ...
     # Rice University. Python Programming Essentials.
-from tkinter import NO
-
-
-name=input("name : ")
-handle=open(name,'r')
-counts=dict()
-for i in handle:
-    word=i.split()
-    for w in word:
-        cuunts[word]=counts.get(w,0)+1
-bigcount=None
-bigword=None
-for w,count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigcount=w
-        bigcount=count
-print(bigword,bigcount)
+# name=input("name : ")
+# handle=open(name,'r')
+# counts=dict()
+# for i in handle:
+#     word=i.split()
+#     for w in word:
+#         counts[word]=counts.get(w,0)+1
+# bigcount=None
+# bigword=None
+# for w,count in counts.items():
+#     if bigcount is None or count > bigcount:
+#         bigcount=w
+#         bigcount=count
+# print(bigword,bigcount)
+a=(1,2,3,6)
+print(sum(list(a)))
