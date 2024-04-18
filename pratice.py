@@ -45,5 +45,4 @@
 #         bigcount=w
 #         bigcount=count
 # print(bigword,bigcount)
-a=(1,2,3,6)
-print(sum(list(a)))
+

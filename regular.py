@@ -5,3 +5,8 @@
 # m=Solution()
 # print(m.majorityElement(list(input().split())))        
 
+
+
+a={"a",1,2,3,6}
+print(a.discard(2200))
+print(a)
