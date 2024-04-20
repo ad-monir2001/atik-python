@@ -1,35 +1,8 @@
 
-# #!traversing 
-# for i in range(len(a)):                    #**for i in list:==for i in range(len(a)):**
-#     print(a[i])        #**print(list[i])**
 # for i in range(-1,-len(a)-1,-1) :              #**traversing with negative index**
     # print(a[i])
 # #     print(a[i])#**write it(range(-start,-end,-step)) to run NT **range(-1,-len(a)-1,-1)=range(len(a)-1,-1,-1)***
-# # s=[[12,15],[2,9],[3],[5],['Atik','Milon'=="Milon",6],[-1,5]]
-# # print(s[4])
-# #!list slicing
-# a=[1,2,3,4,5,6,"A","S"]
-# print(a[::])#**It(list[s:e:s]) is use for slicing** 
-# #*print(list[start,e,step])=print(a.traverse)
-# print(a[1::2])
-# print(a[-1:-8:-2])
-# print(len(a[-1]))
-# s=[2,3,4,5,6]
-# d=a+s#**list plus**
-# print(d)
-# f="Atik  Milon"
-# print(list)(f)                                 #**It
-# x.reverse()#**list.reverse()=print(a[-1:len:-1])**
-# print(x)'''
-# # x=[1,2,36,45,662,2,6365]
-# # (x.sort(reverse=True))#**ascending=1,2,3,4 and descending=4,3,2,1**
-# # print(x)#**list.sort()=ascending** **list.sort()=descending**
-#  #!List comprehension#[i for i in list,condition]
-# '''a=input().split()
-# print(len(a))
-# print(a)
-# s=list(map(int,input().split()))#!list(map("int,float",input().split())) **it(list) is very important.
-# print(s)
+
 # a=[1,2,3,4,5,6,858,5,6]
 # s=[i+10 for i in a]#!it use to add any number with every number.
 # print(s)
@@ -40,34 +13,23 @@
 # print(a)#![i for i in range()]=list(range())
 # a=["odd"if o%2!=0 else "even" for o in range(0,10)]
 # print(a)'''
-# '''ma=[[1,2,4,8],[5,2,3,5]]
-# a=[]#Transpose 
-# for row in range(4):#!        imp
-#     b=[]            #!        or
-#     for col in ma:  #!        ta
-#         b.append(col[row])#!  nt.....
-#     a.append(b)
-# print(a)
-#  #!result=[[inner loop]outer loop]
-# a=[[col[row]for col in ma]for row in range(4)]
-# print(a)'''
-# '''a=[1,2,3,4,5,7,6,8,8,9,9]
-# s=[]
-# r=0
-# for i  in a:
-#     if i not in s:
-#         r=r+1
-#         s.append(i)
-# print(r)
-# k=2
-# f=[]
-# for i in a:
-#     fq=a.count(i)
-#     if fq==2 and i not in f:
-#         f.append(i)
-# print(f)
-# j=[[j for j in range(5)if j != i]for i in range(5)]
-# print(j)'''
+#=================================================#
+#=================================================#
+# # # '''ma=[[1,2,4,8],[5,2,3,5]]
+# # # a=[]#Transpose 
+# # # for row in range(4):#!        imp
+# # #     b=[]            #!        or
+# # #     for col in ma:  #!        ta
+# # #         b.append(col[row])#!  nt.....
+# # #     a.append(b)
+# # # print(a)
+# # #  #!result=[[inner loop]outer loop]
+# # # a=[[col[row]for col in ma]for row in range(4)]
+# # # print(a)'''
+# # # j=[[j for j in range(5)if j != i]for i in range(5)]
+# # # print(j)'''
+#=================================================#
+#=================================================#
 # # a=[]
 # # for i in range(5):
 # #     for s in range(5):
@@ -131,20 +93,3 @@
 # for i in a:
 #     r=r+i[::-1]+" "
 # print(r)'''
-# od=["sunday","monday","tuesday","wednesday","thursday"]
-# cd=["saturday","friday"]
-# w=False
-# print(type(w))
-# while not w:
-#     rain=input(" value : ")
-#     day=input("The day : ")
-#     if day in od and rain:
-#         print(input(f"{day} school has opened and it's raining=={rain}. Do you go to school?Write here Your dessition : "))
-#         continue
-#     elif day in od and not rain:
-#         print(input(f"{day} school has opened and it's raining=={rain}. will you go to school?Write here Your dessition : "))
-#     elif day in cd and rain:
-#         print(input(f"{day} school has closed and it's raining=={rain}. Do you go to school?Write here Your dessition : "))
-#         break
-#     else:
-#         print(input("What will you do? : "))
