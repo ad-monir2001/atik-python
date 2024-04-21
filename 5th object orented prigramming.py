@@ -1,50 +1,6 @@
 #  #!OBJECT ORIENTED PROGRAMMING
-# #*oBJECT IS A COLLECTION OF DATA AND DEF.
-# #O=attribute + method #* all objs are members of a class
-# class rules:
-# #!class Class Name():
-# #!   def __init__(self ,attribute1,attribute2):#pare
-# #*      self .attribute1=attribute1
-# #*      self .attribute2=attribute2
-# #!   def methodname(self):
-# #*      statement(s)
-#     print()
-# #* obj name=className(parameters)####obj
-class object_oriented():
-    def __init__(self,first_Name , money):
-        self.Name=first_Name
-        self.mo=money+int(input("last_added_money : "))
-
-    def full_function(self,last_Name,last_added_money):
-        self.mo=self.mo+last_added_money
-        self.Name=self.Name+last_Name
-        print(f"{last_added_money} is my total amount")
-introduction=object_oriented.full_function("A",5)
-introduction=object_oriented(first_Name=input("Name : "),money=eval(input('amount : ')))
-print((introduction.mo))
-# #!ONE
-# class Car:
-#     def __init__(self,Name:str,Creator:str,Color:str,Making_Year):
-#         self.name=Name
-#         self.color=Color
-#         self.Making_y=Making_Year
-#         self.Creator=Creator
-#     import datetime
-#     def The_methods_of_this_Car_are(self):
-
-#         assert self.Making_y!=datetime.date.today(); "It is possible to make any car in today.so it is wrong ."
-        
-#         print(self.name)
-#         print(self.color)
-#         print(self.Creator)
-#         print(self.Making_y)
-
-#         print("start the engine")
-#         print("Press the break")
-#         print("please drive")
-#         print("turn left and right")
-#         print("Change gear")
-
+# #oBJECT IS A COLLECTION OF DATA AND DEF.
+# #O=attribute + method # all objs are members of a class
 # import datetime
 # Shakib=Car(input("shakib's Car Name : "),input("shakib's Car creator : "),input("shakib's Car Color : "),(datetime.datetime.today()))
 # print(Shakib.The_methods_of_this_Car_are())
@@ -58,9 +14,9 @@ print((introduction.mo))
 
 # INHERITANCE                        ******
 #!class parent class():              ******
-#*   Body of parent class            ******
+#    Body of parent class            ******
 #!class child class(parent class):   ******
-#*   Body of child class             ******
+#    Body of child class             ******
 # class Man:
 #     """Base class for all Man"""
 #     def __init__(self,Name,age:int,company):
@@ -79,7 +35,6 @@ print((introduction.mo))
 # student1.company=person1.company
 # (student1.re())
 #!POLYMORPHISM
-#!
 # class Man:
 #     def __init__(self,Name,age):
 #         self.Name=Name;self.Age=age
@@ -91,12 +46,21 @@ print((introduction.mo))
 # class Shakib(Man):
 #     def intro(self):
 #       print(S.Name,"is", S.Age ,"years old")
-# class Milon(Man):
-#     def intro(self):
-#         print(f"{self.Name} is my friend")
 # A=Atikur("Atikur",17);S=Shakib("Shakib",18)
-# M=Milon("Milon",17)
-# for N in [A,S,M]:
-#     (N.intro())
 
-    
+from itertools import zip_longest
+
+class rectangle:
+
+    def __init__(self,length,wide):
+        self.l=length
+        self.w=wide
+        import turtle
+        print(turtle.forward(self.l))
+        turtle.exitonclick()
+rec1=rectangle(int(input()),input())
+f=input()
+r=input()
+e=input()
+for a,s,d in zip_longest(f,r,e):
+    print(a,s,d)
