@@ -48,19 +48,29 @@
 #       print(S.Name,"is", S.Age ,"years old")
 # A=Atikur("Atikur",17);S=Shakib("Shakib",18)
 
-from itertools import zip_longest
+
+
+# class student:
+#     def __init__(self,*name,**marks):
+#         for i in name:
+#             print(i)
+#         for e in marks:pass
+#         print(marks)
+# a=student("Atikur","rashel","sahed",m=80,r=90,s=87)
+
+
 
 class rectangle:
-
-    def __init__(self,length,wide):
-        self.l=length
-        self.w=wide
-        import turtle
-        print(turtle.forward(self.l))
-        turtle.exitonclick()
-rec1=rectangle(int(input()),input())
-f=input()
-r=input()
-e=input()
-for a,s,d in zip_longest(f,r,e):
-    print(a,s,d)
+    def __init__(self,height,width):
+        self.heigth=height
+        self.width=width
+    def set_height(self,height):
+        self.set__height=height
+    def set_width(self,width):
+        self.set__width=width
+    def mainres(self):
+        return self.set_height==self.set_width
+A=rectangle(input(),input())
+S=rectangle(int(input()),int(input()))
+print(A.mainres())
+print(S.mainres())
