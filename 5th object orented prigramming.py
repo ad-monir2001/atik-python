@@ -74,3 +74,4 @@ A=rectangle(input(),input())
 S=rectangle(int(input()),int(input()))
 print(A.mainres())
 print(S.mainres())
+# Barisal board বহুনির্বাচনি প্রশ্নোত্তর 2016
