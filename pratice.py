@@ -1,20 +1,6 @@
-# a=['😱','🙂','🥳','😭','🍎', '🍊', '🍎', '🍎', '🍊']
-# import random
-# s=a[random.randint(0,8)]
-# p=a[random.randint(0,8)]
-# if s==p:
-#     print("There is nothing any player")
-# else:
-#     print(s,"VS",p)
+# University of Michigan. Python 3 Programming. ... ...
+# Rice University. Python Programming Essentials.
 
-
-    # University of Michigan. ...
-    # Coursera Project Network. ...
-    # University of Michigan. Python 3 Programming. ...
-    # Google. Google IT Automation with Python. ...
-    # Meta. Programming in Python. ...
-    # University of Pennsylvania. Introduction to Programming with Python and Java. ...
-    # Rice University. Python Programming Essentials.
 # name=input("name : ")
 # handle=open(name,'r')
 # counts=dict()
@@ -29,3 +15,11 @@
 #         bigcount=w
 #         bigcount=count
 # print(bigword,bigcount)
+
+###########   USER MADE BUILTIN FUNCTION  ########
+class Main:
+    def A(self,wide,height):
+        self._wide=wide
+        self._height=height
+
+

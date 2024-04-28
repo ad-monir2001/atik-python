@@ -14,4 +14,3 @@
 #     print(e)
 
 
-# Barisal board and dhaka board 2016 বহুনির্বাচনি প্রশ্নোত্তর
