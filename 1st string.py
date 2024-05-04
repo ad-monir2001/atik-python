@@ -12,3 +12,5 @@ DIC["DICr"]={"A":"ATIKUR","S":"RAHMAN"}#It(dic_name["what will I change"]) use t
 # print(DIC["DISTRICT"]);"==";print(DIC.get("DISTRICT"))
 # DIC.items() #*dict to tuple
 # del DIC["DICr"]
+print(DIC["COUNTRY"])
+print(DIC["DICr"])
