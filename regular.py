@@ -12,8 +12,9 @@
         
 #         return "".join(pre)
 
-class Colouring:
-    def colour(self,color):
-        self._color=color
-    def rint(self):
-        return self._color
+from unittest import removeResult
+
+
+def add(a,n):
+    return a+n
+

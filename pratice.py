@@ -17,9 +17,6 @@
 # print(bigword,bigcount)
 
 ###########   USER MADE BUILTIN FUNCTION  ########
-class Main:
-    def A(self,wide,height):
-        self._wide=wide
-        self._height=height
-
-
+import regular
+if __name__=="__regular__":
+    print(regular.add(4,8))
