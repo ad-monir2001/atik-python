@@ -9,7 +9,7 @@ t=turtle.Turtle()
 
 t.shape("turtle")
 t.speed(0)
-turtle.bgcolor("orange") 
+turtle.bgcolor("black") 
 a=0
 for x in range(350): 
     a=a+1
