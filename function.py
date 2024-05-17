@@ -1,35 +1,23 @@
-# import turtle as t
-# import math
-# a=int(input("Enter the equal sight of triangle : "))
-# angle=int(input("the included angle of triangle : "))
-# another_angle=180-((180-angle)/2)
-# b=[((a*2)**2 - math.sqrt((2*a)**4 -(4*(a**2)*math.sin(angle))**2))/2 ,((a*2)**2 + math.sqrt((2*a)**4 -(4*(a**2)*math.sin(angle))**2))/2]
-# for i in b:
-#     if i>0:
-#         another_side=i
-#         def triangle(length1,length2):
-#             length1=a
-#             length2=another_side
-#             t.forward(length2)
-#             t.left(another_angle)
-#             t.forward(length1)
-#             t.left(angle)
-#             t.forward(length1)
-#         triangle(a,another_side)
-# t.done()       
-from turtle import *
+import turtle as t
 import math
-s=(180-(360-(140*2))/2)/2;b=180-s
-a=float(input())
-ano=((4*a**2  - (math.sqrt((16*a*4)-4*a**2*((math.sin(s))**2)))))
-pu()
-goto(0,0)
-pd()
-fd(a)
-lt(140)
-fd(a)
-
-lt(b)
-fd(ano)
-print(0.5*((a**2)*math.sin(s)))
-
+t.hideturtle()
+a=float(input("equal_length : "))
+included_angle=int(input("included angle : "))
+counted_angle=180-included_angle
+another_angle=180-(180-counted_angle)/2
+pi=math.pi
+another_length=(a*(math.sin((pi/180)*counted_angle)))/math.cos((pi/180)*(counted_angle/2)) ## a*sin(counted_angle)/cos(counted_angle/2)
+print(another_angle)
+t.pencolor(input("border color : "))
+def triangle(L1,equal):
+    if included_angle!=another_angle:  
+        t.fd(L1)
+        t.left(another_angle)
+        t.fd(equal)
+        t.left(included_angle)
+        t.fd(equal)
+        t.left(another_angle)
+    else:
+        print("L does not equal L2")
+triangle(another_length,a)
+t.done()

@@ -12,8 +12,6 @@
         
 #         return "".join(pre)
 
-from unittest import removeResult
-
 
 def add(a,n):
     return a+n
