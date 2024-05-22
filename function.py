@@ -25,28 +25,28 @@
 # import math
 # pi=math.pi
 
-# #=========================================================================
-#                                                                          |
-#                 #         A                                              |
-#                 #        /\        θ = /_B=/_C                           |
-#                 #       /  \       /_A=180-θ                             |
-#                 #      /    \                                            |
-#                 #     /      \                                           |
-#                 #    /        \                                          |
-#                 #   /          \                                         |
-#                 #  /____________\                                        |
-# #                 B             C                                        |
-#                                                                          |
-# #=========================================================================
-#                                                                          |
-# a=int(input("equal_length : "))                                          |
-θ=int(input("Take an equal angle to draw an Isosceles triangle : "))      #|
-# included_angle=360-θ*2                                                   |
-# counted_angle=180-θ                                                      |
-# b=2*a*math.cos(pi/180*(counted_angle))                                   |
-# color=["red","cyan","green","olive","Teal","orange"]                     |
-#                                                                          |
-# #=========================================================================
+# #============================================
+# #                                           |
+#         #         A                         |
+#         #        /\        θ = /_B=/_C      |
+#         #       /  \       /_A=180-θ        |
+#         #      /    \                       |
+#         #    a/      \ a                    |
+#         #    /        \                     |
+#         #   /          \                    |
+#         #  /____________\                   |
+#         # B      b      C                   |
+# #                                           |
+# # #==========================================
+# #                                                                          
+# a=int(input("equal_length : "))                                          
+# θ=int(input("Take an equal angle to draw an Isosceles triangle : "))      
+# included_angle=360-θ*2                                                 
+# counted_angle=180-θ        
+# b=2*a*math.cos(pi/180*(counted_angle))                                  
+# color=["red","cyan","green","olive","Teal","orange"]                   
+
+# # =============================================
 
 # def equilateral_triangle(equal_length,another_length,theta):
 #     for i in range(len(color)):
@@ -67,4 +67,3 @@
 # equilateral_triangle(a,b,θ)
 # t.hideturtle()
 # t.done()
-# a=["ATikur","Rahman","rana","Sabbir"]
