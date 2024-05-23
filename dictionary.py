@@ -52,17 +52,22 @@ user={
         }
     }
 }
-
-a=input("Enter Area/Name/Gander/Date of birth : ")
-if a=="Area":
-    s=user[input("Enter any name user1/user2/user3 : ")][a]
-    for key,value in s.items():
-        print(f"{key}:{value}")
+choose=[ "users sort information","users full information"]
+c=input(f"please choose . {choose[0]}  or  {choose[1]} : ")
 
 
-elif a=="Name":
-    print(user[input("Enter any name user1/user2/user3 : ")][a])
-elif a=="Gander":
-    print(user[input("Enter any name user1/user2/user3 : ")][a])
+if c==choose[0]:
+    u=input("Enter any user user1/user2/user3 : ")
+    a=input("Enter Area/Name/Gander/Date of birth : ")
+    if a.capitalize()=="Area":
+        s=user[u][a.capitalize()]
+        for key,value in s.items():
+            print(f"{key}:{value}")
+    elif a.capitalize()=="Name"or"Gander"or"Date of birth":
+        print(user[u][a.capitalize()])
+
+
 else:
-    print(user[input("Enter any name user1/user2/user3 : ")][a])
+    for k,v in user[input("Enter any user user1/user2/user3 : ")].items():
+        print(f'{k}:{v}')
+
