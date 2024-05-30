@@ -1,0 +1,20 @@
+def play_game():
+    print("Welcome to the 0/x Puzzle Game!")
+    print("Try to make the result 0 by dividing numbers (x).")
+    print("Enter 'q' to quit.")
+
+    while True:
+        try:
+            x = float(input("Enter a number (x): "))
+            if x == 0:
+                print("Congratulations! You've made the result 0!")
+                break
+            result = 0 / x
+            print(f"The result is: {result}")
+        except ValueError:
+            print("Please enter a valid number.")
+        except ZeroDivisionError:
+            print("Oops! You can't divide by zero.")
+
+if __name__ == "__main__":
+    play_game()
