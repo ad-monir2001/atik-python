@@ -81,31 +81,16 @@
 
 # O/x puzzle game
 
-while True:
-    def count(x):
 
+while True :
+
+    def mu(x):
         try:
             return 0/x
-        except ZeroDivisionError as a:
-            print(a)
+        except ZeroDivisionError as z : 
+            print("yor are win the game ")
 
-
-        except TypeError as m:
-            print(m)
-        except ValueError as e :
-            print(e)
-        finally :
-            print(0/x)
-
-    print(count(int(input())))
-
-
-
-def mu(x):
-    try:
-        return 0/x
-    except ZeroDivisionError as z : 
-        print("yor are win the game ")
-
-
-print(mu(int(input())))
+    x=int(input())
+    print(mu(x))
+    if x==0:
+        break
