@@ -26,6 +26,8 @@ def  full_board(board):
 
 def PLAYERS(player):
 
+
+
     while True:
         try:
             p_c = int(input(f"Player {player}, enter your move (1-9): ")) - 1
@@ -34,23 +36,19 @@ def PLAYERS(player):
             else:
                 print("out of range. enter a number between 1-9.")
         except ValueError as v:
-            print("Invalid input. enter an integer number between 1-9.")
+            print(v)
 
 def main():
     board = [" " for _ in range(9)]
     player = "0"
-    import random
-    ran=["0","0"]
-    ra=random.randint(0,1)
-    r=ran[ra]
+
     while True:
         Board(board)
         move = PLAYERS(player)
 
         if board[move] == " ":
             board[move] = player
-            if board[move]==r:
-                board[move]=player
+
         else:
             print("this cell had already completed. Try again.")
 
@@ -61,7 +59,7 @@ def main():
             break
 
 
-        player =r  if board[move] == "0" else "0"
+        player ="X"  if board[move] == "0" else "0"
 
 
 main()
