@@ -82,15 +82,43 @@
 # O/x puzzle game
 
 
-while True :
 
-    def mu(x):
-        try:
-            return 0/x
-        except ZeroDivisionError as z : 
-            print("yor are win the game ")
 
-    x=int(input())
-    print(mu(x))
-    if x==0:
-        break
+# import json
+
+
+# with open ("a.json",'r') as r:
+#     j=r.read()
+#     j_v=json.loads(j)
+#     print(j_v)
+# indentation with tab
+
+
+import argparse
+
+parser=argparse.ArgumentParser(description="Counting")
+parser.add_argument('num1',help="Number1",type=float)
+parser.add_argument('num2',help="Number2",type=float)
+parser.add_argument('operation',default='+')
+args=parser.parse_args()
+for _ in range(2):
+    print()
+print(args)
+
+res=None
+if args.operation =="+":
+    res=args.num1+args.num2
+    
+if args.operation =="-":
+    res=args.num1-args.num2
+    
+if args.operation =="*":
+    res=args.num1*args.num2
+    
+if args.operation =="**":
+    res=args.num1**args.num2
+    
+print(f"result of num1 {args.operation} num2 = ",res)
+
+for _ in range(2):
+    print()

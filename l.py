@@ -93,3 +93,7 @@
 # for i in a:
 #     r=r+i[::-1]+" "
 # print(r)'''
+a=[1,2,3,4,5,6]
+it=iter(a)
+
+print(next(it))

@@ -20,9 +20,10 @@ def check_winner(board, player):
     ]
     return any(all(board[cell] == player for cell in combo) for combo in winning_cell)
    
-def  full_board(board):
+# def  full_board(board):  
+#     """unimportant"""
 
-    return all(cell != " " for cell in board)
+#     return all(cell != " " for cell in board)
 
 def PLAYERS(player):
 

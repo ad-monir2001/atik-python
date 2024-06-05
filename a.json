@@ -1,0 +1,18 @@
+{
+  "Name" : "Atikur" ,
+  "age" : 17 ,
+  "mark" : [
+    1 ,
+    4 ,
+    3 ,
+    6
+  ] ,
+  "pass" : false ,
+  "color_list" : {
+    "color" : [
+      "red" ,
+      "cyan" ,
+      "olive"
+    ]
+  }
+}
