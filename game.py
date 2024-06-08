@@ -1,5 +1,5 @@
 
-"0/X PUZZLE GAME"
+
 
 
 
@@ -26,9 +26,6 @@ def check_winner(board, player):
 #     return all(cell != " " for cell in board)
 
 def PLAYERS(player):
-
-
-
     while True:
         try:
             p_c = int(input(f"Player {player}, enter your move (1-9): ")) - 1

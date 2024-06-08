@@ -1,14 +1,3 @@
-# def check_winner(board, player):
-
-#     winning_cell = [
-#         [0,1,2],[3,4,5],[6,7,8],  
-#         [0,3,6],[1,4,7],[2,5,8],  
-#         [0,4,8],[2,4,6]              
-#     ]
-#     return any(all(board[cell] == player for cell in combo) for combo in winning_cell)
-
-
-
 
 
 
@@ -35,10 +24,18 @@ def Players(player):
         except ValueError as v:
             print(v)
 
+def Wining(board,player):
+    wining_c=[
+        [0,1,2],[3,4,5],[6,7,8],  
+        [0,3,6],[1,4,7],[2,5,8],  
+        [0,4,8],[2,4,6]              
+    ]
+    
+    return(any(all(board[cell]==player for cell in i)for i in wining_c))
 
 
 
-        
+
 def main():
     player="X"
     board=[" " for _ in range(9)]
@@ -52,11 +49,15 @@ def main():
             print("this is already completed")
 
 
+        if Wining(board, player):
+            Board(board)
+            print(f"Player {player} has won this game !")
+            break
+
         player="0" if board[move]=="X" else "X"
 
-    
 
 
 main()
 
-# print(any(all(board[cell])))
+

@@ -1,18 +1,35 @@
 {
-  "Name" : "Atikur" ,
-  "age" : 17 ,
-  "mark" : [
-    1 ,
-    4 ,
-    3 ,
-    6
-  ] ,
-  "pass" : false ,
-  "color_list" : {
-    "color" : [
-      "red" ,
-      "cyan" ,
-      "olive"
-    ]
+  "user1":{
+    "Name":"Atikur Rahman" , 
+    "Gander":"Male" , 
+    "Date of birth":"30-05-2007" , 
+    "is married":null , 
+    "Area":{
+      "Country":"Bangladesh" , 
+      "District":"Bogura" , 
+      "Village":"cotochapra"
+    } , 
+    "password":263964
+  } , 
+  "user2":{
+    "Name":"Virat Kohli" , 
+    "Gander":"Male" , 
+    "Date of birth":"10-11-195" , 
+    "is married":true , 
+    "Area":{
+      "Country":"India" , 
+      "District":"Bangalaru" , 
+      "Village":"vid"
+    }
+  } , 
+  "user3":{
+    "Name":"Babar Azam" , 
+    "Gander":"Male" , 
+    "Date of birth":"01-08-1992" , 
+    "Area":{
+      "Country":"Pakistan" , 
+      "District":"United islamabad" , 
+      "Village":"Kua"
+    }
   }
 }
