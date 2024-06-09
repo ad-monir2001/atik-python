@@ -41,37 +41,37 @@ user={
 
 
 
-import json
+# import json
 
 
-with open ("a.json",'w') as r:
-    r.write(json.dumps(user,indent=2,separators=(" , ",":")))
+# with open ("a.json",'w') as r:
+#     r.write(json.dumps(user,indent=2,separators=(" , ",":")))
 
-import argparse
+# import argparse
 
-parser=argparse.ArgumentParser(description="Counting")
-parser.add_argument('num1',help="Number1",type=float)
-parser.add_argument('num2',help="Number2",type=float)
-parser.add_argument('operation',default='+')
-args=parser.parse_args()
-for _ in range(2):
-    print()
-print(args)
+# parser=argparse.ArgumentParser(description="Counting")
+# parser.add_argument('num1',help="Number1",type=float)
+# parser.add_argument('num2',help="Number2",type=float)
+# parser.add_argument('operation',default='+')
+# args=parser.parse_args()
+# for _ in range(2):
+#     print()
+# print(args)
 
-res=None
-if args.operation =="+":
-    res=args.num1+args.num2
+# res=None
+# if args.operation =="+":
+#     res=args.num1+args.num2
     
-if args.operation =="-":
-    res=args.num1-args.num2
+# if args.operation =="-":
+#     res=args.num1-args.num2
     
-if args.operation =="*":
-    res=args.num1*args.num2
+# if args.operation =="*":
+#     res=args.num1*args.num2
     
-if args.operation =="**":
-    res=args.num1**args.num2
+# if args.operation =="**":
+#     res=args.num1**args.num2
     
-print(f"result of num1 {args.operation} num2 = ",res)
+# print(f"result of num1 {args.operation} num2 = ",res)
 
-for _ in range(2):
-    print()
+# for _ in range(2):
+#     print()
