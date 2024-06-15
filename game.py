@@ -1,15 +1,12 @@
 
-
-
-
-
-
 def Board(board):
 
     for row in range(3):
         print("   |".join(board[row * 3:(row + 1) * 3]))
         if row < 2:
             print("-" * 14)
+
+
 
 def check_winner(board, player):
 
@@ -18,12 +15,8 @@ def check_winner(board, player):
         [0,3,6],[1,4,7],[2,5,8],  
         [0,4,8],[2,4,6]              
     ]
-    return any(all(board[cell] == player for cell in combo) for combo in winning_cell)
+    return any(all(board[cell] == player for cell in combo) for combo in winning_cell) 
    
-# def  full_board(board):  
-#     """unimportant"""
-
-#     return all(cell != " " for cell in board)
 
 def PLAYERS(player):
     while True:

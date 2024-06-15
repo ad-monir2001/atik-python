@@ -1,4 +1,4 @@
-def main():
+def maine():
     x=int(input('enter your number : '))
     if even(x):
         print(f'{x} is even number ')
@@ -16,4 +16,31 @@ def even(a):
     return (a%2==0)
 
 
-main()
+maine()
+
+
+
+
+
+for i in range(3):
+    for _ in range(3):
+        print("#",end='',)
+    print()
+
+
+
+def main():
+    print_square(3)
+    
+def print_square(size):
+    for i in range(size):
+        for j in range(size):
+            print("#",end="")
+        print()
+        
+main()  
+
+
+
+def get_error():
+    pass
