@@ -58,9 +58,9 @@ from decimal import Decimal as D
 # >>> Fraction(Decimal('1.47'))
 # Fraction(147, 100)
 
-import cowsay
-print(cowsay.cow('hello Atikur Rahman how are your?'))
-print(cowsay.trex('hello Atikur Rahman how are your?'))
+# import cowsay
+# print(cowsay.cow('hello Atikur Rahman how are your?'))
+# print(cowsay.trex('hello Atikur Rahman how are your?'))
 
 
 # import pyfiglet
@@ -112,3 +112,9 @@ print(cowsay.trex('hello Atikur Rahman how are your?'))
 
 # # Save the QR code as an SVG file
 # qr.svg("example.svg", scale=8)
+
+import requests
+import sys
+if len(sys.argv)==1:
+    sys.exit()
+requests.get("https://www.example.com")

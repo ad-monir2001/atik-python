@@ -42,5 +42,3 @@ main()
 
 
 
-def get_error():
-    pass
