@@ -37,5 +37,3 @@ import re
 # res=re.compile(r'\d{5}\s*\d{6}')
 res=re.compile(r'01[356789]\d{2}[-]\d{6}')
 print(res.findall(digit))
-
-
