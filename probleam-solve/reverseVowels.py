@@ -32,3 +32,17 @@ class Solution:
 s=Solution()
 print(s.largestNumber([3,30,8,7,65,90,25,34,5,9]))
 print(s.largestNumber([3,30,34,5,9]))
+
+
+# * Problem number 1360
+
+# class Solution:
+#     def maxNumber(self, nums1: list[int], nums2: list[int], k: int) -> list[int]:
+#         list1=nums1+nums2
+#         if len(list1)==k:
+#             return list
+#         else:
+#             list1.sort(reverse=True)
+#             return list1[0:k]
+# s=Solution()
+# print(s.maxNumber([3,4,6,5],[9,1,2,5,8,3],5))
