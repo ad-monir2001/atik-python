@@ -18,20 +18,34 @@
 # s=Solution()
 # print(s.longestPalindrome('abccccdd'))
 
-class Solution:
-    def sumOddLengthSubarrays(self, arr: list[int]) -> int:
-        list1=[]
-        if len(arr)>=3:
-            s=0
-            for i in range(len(arr)-2):
-                list1.append(sum(arr[s:s+3]))
-                s=s+1
+# class Solution:
+#     def sumOddLengthSubarrays(self, arr: list[int]) -> int:
+#         list1=[]
+#         if len(arr)>=3:
+#             s=0
+#             for i in range(len(arr)-2):
+#                 list1.append(sum(arr[s:s+3]))
+#                 s=s+1
                 
-            list1.append(sum(arr))
-            list1.append(sum(arr))
-            return sum(list1)
-        else:
-            return sum(arr)
+#             list1.append(sum(arr))
+#             list1.append(sum(arr))
+#             return sum(list1)
+#         else:
+#             return sum(arr)
     
-s=Solution()
-print(s.sumOddLengthSubarrays( [1,4,2,5,3]))
+# s=Solution()
+# print(s.sumOddLengthSubarrays( [1,4,2,5,3]))
+
+class Solution:
+    def specialArray(self, nums: list[int]) -> int:
+        nums.sort()
+        n = len(nums)
+        
+        for x in range(n + 1):
+            # Count how many numbers are greater than or equal to x
+            count = sum(1 for num in nums if num >= x)
+            
+            if count == x:
+                return x
+        
+        return -1
