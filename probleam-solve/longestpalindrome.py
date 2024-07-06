@@ -38,14 +38,53 @@
 
 class Solution:
     def specialArray(self, nums: list[int]) -> int:
-        nums.sort()
-        n = len(nums)
+        a = nums
+        n = len(a)
         
         for x in range(n + 1):
-            # Count how many numbers are greater than or equal to x
-            count = sum(1 for num in nums if num >= x)
+
+            count = sum(1 for s in a if s >= x)
             
             if count == x:
                 return x
         
         return -1
+
+
+
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        
+        l1 = []
+        l2 = []
+        m = len(s)//2
+        v = ['a','e','i','o','u','A','E','I','O','U']
+        
+        for i in range(m):
+            for j in v:
+                if s[i]==j:
+                    l1.append(s[i])
+        for e in range(m,len(s)):
+            for j in v:
+                if s[e]==j:              
+                    l2.append(s[e])
+        return len(l1)==len(l2)
+class Solution:
+    def twoOutOfThree(self, nums1: list[int], nums2: list[int], nums3: list[int]) -> list[int]:
+        list1=[]
+        atikur=nums1
+        sin= nums2
+        demon= nums3
+        for i in sin:
+            if i in atikur or i in demon:
+                list1.append(i)
+        for i in atikur:
+            if i in sin or i in demon:
+                list1.append(i)
+        for i in demon:
+            if i in sin or i in atikur:
+                list1.append(i)
+        f = list
+        n = set
+        return f(n(list1))
+    

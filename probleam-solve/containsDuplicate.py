@@ -13,6 +13,3 @@ s=Solution()
 print(s.containsDuplicate([1,2,3,1]))
 
 
-class Solution:
-    def containsDuplicate(self, nums: list[int]) -> bool:
-        return len(set(nums))!=len(nums)
