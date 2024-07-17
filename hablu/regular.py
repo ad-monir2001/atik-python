@@ -1,7 +1,5 @@
 # import re
 
-
-
 # text='My name is Atikur , Atikur is the best  Boy'
 # #function of regular expression
 # # findall
@@ -37,7 +35,3 @@
 # # res=re.compile(r'\d{5}\s*\d{6}')
 # res=re.compile(r'01[356789]\d{2}[-]\d{6}')
 # print(res.findall(digit))
-import re
-text="""What is Python?What type of language is Python? Python is an interpreted, object-oriented, high-level programming language with dynamic semantics developed by Guido van Rossum. It was originally released in 1991. Designed to be easy as well as fun, the name "Python" is a nod to the British comedy group Monty Python. Python has a reputation as a beginner-friendly language, replacing Java as the most widely used introductory language because it handles much of the complexity for the user, allowing beginners to focus on fully grasping programming concepts rather than minute details.Python is used for server-side web development, software development, mathematics, and system scripting, and is popular for Rapid Application Development and as a scripting or glue language to tie existing components because of its high-level, built-in data structures, dynamic typing, and dynamic binding. Program maintenance costs are reduced with Python due to the easily learned syntax and emphasis on readability. Additionally, Python's support of modules and packages facilitates modular programs and reuse of code. Python is an open source community language, so numerous independent programmers are continually building libraries and functionality for it."""
-
-print(re.findall(text,'python'))
