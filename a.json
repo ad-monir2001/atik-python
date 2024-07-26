@@ -14,10 +14,10 @@
   "user2":{
     "Name":"Virat Kohli" , 
     "Gander":"Male" , 
-    "Date of birth":"10-11-195" , 
+    "Date of birth":"10-11-1995" , 
     "is married":true , 
     "Area":{
-      "Country":"India" , 
+      "Country":"India",  
       "District":"Bangalaru" , 
       "Village":"vid"
     }
@@ -30,6 +30,16 @@
       "Country":"Pakistan" , 
       "District":"United islamabad" , 
       "Village":"Kua"
+    }
+  }
+}
+
+{
+  {     "\\.vscode\\settings.json",
+    {   "Atikur",
+      {
+        "Atikur",
+      }
     }
   }
 }

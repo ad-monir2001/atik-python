@@ -1,9 +1,0 @@
-
-
-here,
-a=list1[0]
-d=list1[1]-list1[0]
-n=f"{N}"
-we know ,
-S{N}="(n/2*(2*a+(n-1)*d))"
-S{N}=(n/2*(2*a+(n-1)*d))

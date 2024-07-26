@@ -75,3 +75,8 @@ user={
 
 # for _ in range(2):
 #     print()
+a8=3
+r1=3
+n3=2
+print(f'Summation = {(a8*((r1**n3)-1))/(r1-1)}')
+import re

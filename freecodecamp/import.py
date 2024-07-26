@@ -82,26 +82,26 @@ from decimal import Decimal as D
 # artist.fromfile("example.jpg")
 # artist.display()
 
-# from termcolor import colored
+from termcolor import colored
 
-# text = colored('Hello, colored text!', 'green')
-# print(text)
+text = colored('atikur','green')
+print(text)
 
-# # from colorama import init, Fore
-# from googletrans import Translator
+from colorama import init, Fore
+from googletrans import Translator
 
-# translator = Translator()
-# original_text = "Defaulting to user installation because normal site-packages is not writeable"
-# translated_text = translator.translate(original_text, src='en', dest='bn').text
+translator = Translator()
+original_text = "Defaulting to user installation because normal site-packages is not writeable"
+translated_text = translator.translate(original_text, src='en', dest='bn').text
 
-# print(translated_text)
+print(translated_text)
 
-# init()
+init()
 
 
-# print(Fore.RED + "This text is red.")
-# print(Fore.GREEN + "This text is green.")
-# print(Fore.BLUE + "This text is blue.")
+print(Fore.RED + "This text is red.")
+print(Fore.GREEN + "This text is green.")
+print(Fore.BLUE + "This text is blue.")
 
 # import pyqrcode
 # from pyqrcode import QRCode
