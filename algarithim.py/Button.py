@@ -15,4 +15,4 @@
 # B=Button(top,text='click',command=show)
 # B.place(x=60,y=60)
 # top.mainloop()
-# Import modules for CGI handling
+

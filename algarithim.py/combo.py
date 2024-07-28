@@ -1,23 +1,21 @@
-# from tkinter import *
-# from tkinter import ttk
-# t=Tk()
-# frame=Frame(t)
-# frame.pack()
-# value=['Python','Java',"PHP",'C','C++','JavaScript','Python3','TypeScript','Scala','Kotlin']
-# comb=ttk.Combobox(frame,values=value)
-# comb.set('take an option')
-# comb.pack(padx=5,pady=5)
-# mainloop()
-# from tkinter import *
+from tkinter import *
+from tkinter import ttk
+t=Tk()
+frame=Frame(t)
+frame.pack()
 
-# top = Tk()
-# Lb = Listbox(top)
-# Lb.insert(1, 'Python')
-# Lb.insert(2, 'Java')
-# Lb.insert(3, 'C++')
-# Lb.insert(4, 'Any other')
-# Lb.pack()
-# top.mainloop()
+value=['Python','Java',"PHP",'C','C++','JavaScript','Python3','TypeScript','Scala','Kotlin']
+comb=ttk.Combobox(frame,values=value,font=('',15),background='white',foreground='green')
+comb.set('take an option',)
+comb.pack(padx=100,pady=20)
+
+
+
+mainloop()
+
+
+
+
 # from tkinter import *
 
 # root = Tk()
