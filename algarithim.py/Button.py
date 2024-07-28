@@ -1,24 +1,18 @@
+# from tkinter import *
+# from tkinter.simpledialog import askfloat, askinteger, askstring
 
-from tkinter import *
-import random
-p=(random.randint(0,4))
-root=Tk()
-Name=Label(text='',font=('',20),width=80,height=8)
-for i in range(4):
-    Name.grid(row=i,column=0)
-def Callback():
-    global Name
+# top=Tk()
 
-    di={"Name":'Atikur Rahman',
-        'Age':17,
-        'Village':'Chotochapra',
-        'country':'Bangladesh',
-        'school':"KG"}
-    l=['Name','Age','Village','country','school']
-
-    for e in l:
-        Name.configure(text=di[l[p]])
-Button1=Button(text='Click here',font=("",18),background="white",foreground='green',command=Callback,)
-Button1.grid(row=0,column=0)
-mainloop()
-
+# def show():
+#     number=askinteger('Input ','Input an integer number ;');
+#     number2=askfloat('Input','input your float number')
+#     name=askstring('Input','enter your name ')
+#     print(name)
+#     print(number)
+#     print(number2)
+    
+    
+# B=Button(top,text='click',command=show)
+# B.place(x=60,y=60)
+# top.mainloop()
+# Import modules for CGI handling
