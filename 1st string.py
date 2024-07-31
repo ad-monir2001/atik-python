@@ -49,31 +49,31 @@
 # n=memoryview(c)
 # print(n.tolist()==a.tolist())
 
-# import struct
-# b=struct.pack('i'*12, *list(range(12)))
-# x=memoryview(b)
-# y=x.cast('L'or'i',shape=[2,2,3])
-# print(x.tolist())
+import struct
+b=struct.pack('i'*12, *list(range(12)))
+x=memoryview(b)
+y=x.cast('L'or'i',shape=[2,2,3])
+print(x.tolist())
 # [0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 3, 0, 0, 0, 4, 0, 0, 0, 5, 0, 0, 0, 6, 0, 0, 0, 7, 0, 0, 0, 8, 0, 0, 0, 9, 0, 0, 0, 10, 0, 0, 0, 11, 0, 0, 0]
-# print(y.tolist())
+print(y.tolist())
 # [[[0, 1, 2], [3, 4, 5]], [[6, 7, 8], [9, 10, 11]]]
-# b=struct.pack('L'*12,*list(range(12)))
-# x=memoryview(b)
-# y=x.cast('L',shape=[1,2,6])
+b=struct.pack('L'*12,*list(range(12)))
+x=memoryview(b)
+y=x.cast('L',shape=[1,2,6])
 
 
-# print(bin(int()))
+print(bin(int()))
 
 
-# def b(self):
-#     s=bin(self)
-#     s=s.strip('-0b')
-#     return s
-# b(int())
+def b(self):
+    s=bin(self)
+    s=s.strip('-0b')
+    return s
+b(int())
 
 
-# l=[[]]*6
-# l=[[] for i in range(5)]
+l=[[]]*6
+l=[[] for i in range(5)]
 
 
 # async def echo_round() ->[int, float]:
