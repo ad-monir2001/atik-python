@@ -1,45 +1,45 @@
 {
-  "user1":{
-    "Name":"Atikur Rahman" , 
-    "Gander":"Male" , 
-    "Date of birth":"30-05-2007" , 
-    "is married":null , 
-    "Area":{
-      "Country":"Bangladesh" , 
-      "District":"Bogura" , 
-      "Village":"cotochapra"
-    } , 
-    "password":263964
-  } , 
-  "user2":{
-    "Name":"Virat Kohli" , 
-    "Gander":"Male" , 
-    "Date of birth":"10-11-1995" , 
-    "is married":true , 
-    "Area":{
-      "Country":"India",  
-      "District":"Bangalaru" , 
-      "Village":"vid"
-    }
-  } , 
-  "user3":{
-    "Name":"Babar Azam" , 
-    "Gander":"Male" , 
-    "Date of birth":"01-08-1992" , 
-    "Area":{
-      "Country":"Pakistan" , 
-      "District":"United islamabad" , 
-      "Village":"Kua"
-    }
-  }
-}
+  "question": [
+    "Q1. What Indian city is the capital of two states?",
+    "Q2. Which city is the capital of India?",
+    "Q3. Smallest State of India?",
+    "Q4. Where is Taj Mahal Located?",
+    "What is the capital of BAngladesh"
+  ],
+  "answer": [
+    1,
+    2,
+    3,
+    2,
+    2
+  ],
+  "options": [
 
-{
-  {     "\\.vscode\\settings.json",
-    {   "Atikur",
-      {
-        "Atikur",
-      }
-    }
-  }
+    ["Chandigarh",
+      "Kolkata",
+      "Delhi",
+      "Bangalore"
+    ],
+    ["Jaipur",
+      "Delhi",
+      "Chennai",
+      "Mumbai"
+    ],
+    ["Rajasthan",
+      "Punjab",
+      "Goa",
+      "Bihar"
+    ],
+    ["Lucknow",
+      "Agra",
+      "Bhopal",
+      "Delhi"
+    ],
+    [
+      "Bogura",
+      "Dhaka",
+      "Cummila",
+      "Cox Bazar"
+    ]
+  ]
 }
